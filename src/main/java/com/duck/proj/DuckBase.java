@@ -37,7 +37,7 @@ public class DuckBase {
         $(By.cssSelector("[name*='add_cart_product']")).click();// довить уток в корзину
         $(By.cssSelector("[aria-label*='Close']")).click();// закрыть окно с уточкой
     }
-
+    
     public void CurrencyChange() {
         $(By.cssSelector("#region > div.change > a")).click();// кнопка "Change"
         $(By.cssSelector("[name*=currency_code]")).click();// строка с выпадающим списком Currency
