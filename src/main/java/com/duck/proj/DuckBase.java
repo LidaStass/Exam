@@ -12,17 +12,17 @@ public class DuckBase {
         $(By.cssSelector("a[href*='logout']")).click();// Logout
     }
 
-    public void HomeButton() {
+    public void homeButton() {
         $(By.cssSelector("[title*='Home']")).click();// кнопка "Home"
     }
 
-    public void ShoppingCartConfirmOrder() {
+    public void shoppingCartConfirmOrder() {
         $(By.cssSelector("#box-checkout-cart > div > table > tbody > tr:nth-child(1) > td:nth-child(6) > button")).click();
         //удалить уточку
         $(By.cssSelector("[name*='confirm_order']")).click();
     }
 
-    public void PurpleDuck() {
+    public void purpleDuck() {
         $(By.cssSelector("a[href*='#latest-products']")).click();// выбираю категорию Latest Products
         $(By.cssSelector("#box-latest-products [href*='purple-duck-p-5']")).click();// нажать на товар Purple Duck
         $(By.cssSelector("[name*='add_cart_product']")).click();// добавить утку в корзину
@@ -30,15 +30,15 @@ public class DuckBase {
         $(By.cssSelector("#cart")).click();// перейти в корзину
     }
 
-    public void GreenDuck() {
+    public void greenDuck() {
         $(By.cssSelector("a[href*='#popular-products']")).click();// выбираю категорию Popular Products
         $(By.cssSelector("#box-popular-products [href*='green-duck-p-2']")).click();// нажать на товар Green Duck
         $(By.cssSelector("[step*='1']")).setValue("2");// колличество уток
         $(By.cssSelector("[name*='add_cart_product']")).click();// довить уток в корзину
         $(By.cssSelector("[aria-label*='Close']")).click();// закрыть окно с уточкой
     }
-    
-    public void CurrencyChange() {
+
+    public void currencyChange() {
         $(By.cssSelector("#region > div.change > a")).click();// кнопка "Change"
         $(By.cssSelector("[name*=currency_code]")).click();// строка с выпадающим списком Currency
         $(By.cssSelector("[value*=EUR]")).click();// поменяли валюту на евро
@@ -46,7 +46,7 @@ public class DuckBase {
         $(By.cssSelector("[value='Save']")).click();// нажать на кнопку Save
     }
 
-    public void CreateNewAccount() {
+    public void createNewAccount() {
         //создаем новый аккаунт в магазине
         $(By.cssSelector("#box-account-login a")).pressEnter(); //нажать на "New customers click here"
         // Сщздаю нового пользователя

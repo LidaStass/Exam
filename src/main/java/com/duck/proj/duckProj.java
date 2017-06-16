@@ -14,17 +14,17 @@ public class duckProj extends DuckBase {
         open("http://litecart.com/en/");
         //подключила библиотеку selenide.open, откріваю сайт litecard.com
 
-        CreateNewAccount();
+        createNewAccount();
 
-        CurrencyChange();
+        currencyChange();
 
-        GreenDuck();
+        greenDuck();
 
-        PurpleDuck();
+        purpleDuck();
 
-        ShoppingCartConfirmOrder();
+        shoppingCartConfirmOrder();
 
-        HomeButton();
+        homeButton();
 
         Logout();
 
